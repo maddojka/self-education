@@ -65,7 +65,10 @@ class Dog {
     String checkCalories(int calories) {
         float permittedCalories = (535 / 10) * weight;
 
-        if (Math.abs((calories - permittedCalories)) < 30) return "good";
-        else return "bad";
+        if (Math.abs((calories - permittedCalories)) < 30) {
+            return "good";
+        } else {
+            return "bad";
+        }
     }
 }
